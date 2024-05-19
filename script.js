@@ -4,7 +4,7 @@ function login() {
     var password = document.getElementById('loginPassword').value;
 
     // Replace with your actual login API endpoint
-    var apiEndpoint = 'https://yourapiendpoint.com/login';
+    var apiEndpoint = 'https://run.mocky.io/v3/8fc2a660-f1a6-4f41-b574-63fd8c64a11e';
 
     fetch(apiEndpoint, {
         method: 'POST',
@@ -17,7 +17,7 @@ function login() {
     .then(data => {
         if (data.success) {
             // Replace with your actual redirect URL
-            window.location.href = 'https://yourwebsite.com';
+            window.location.href = 'https://usmgo.portfoliobox.net/loginsuccess';
         } else {
             alert('Login failed: ' + data.message);
         }
