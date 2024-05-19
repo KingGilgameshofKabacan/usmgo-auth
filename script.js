@@ -3,7 +3,6 @@ function login() {
     var email = document.getElementById('loginEmail').value;
     var password = document.getElementById('loginPassword').value;
 
-    // Replace with your actual login API endpoint
     var apiEndpoint = 'https://run.mocky.io/v3/8fc2a660-f1a6-4f41-b574-63fd8c64a11e';
 
     fetch(apiEndpoint, {
@@ -15,8 +14,8 @@ function login() {
     })
     .then(response => response.json())
     .then(data => {
+        console.log('Response from login API:', data); // Log the response for debugging
         if (data.success) {
-            // Replace with your actual redirect URL
             window.location.href = 'https://usmgo.portfoliobox.net/loginsuccess';
         } else {
             alert('Login failed: ' + data.message);
@@ -33,7 +32,6 @@ function signup() {
     var email = document.getElementById('signupEmail').value;
     var password = document.getElementById('signupPassword').value;
 
-    // Replace with your actual signup API endpoint
     var apiEndpoint = 'https://run.mocky.io/v3/8fc2a660-f1a6-4f41-b574-63fd8c64a11e';
 
     fetch(apiEndpoint, {
@@ -45,8 +43,8 @@ function signup() {
     })
     .then(response => response.json())
     .then(data => {
+        console.log('Response from signup API:', data); // Log the response for debugging
         if (data.success) {
-            // Replace with your actual redirect URL
             window.location.href = 'https://usmgo.portfoliobox.net/loginsuccess';
         } else {
             alert('Signup failed: ' + data.message);
