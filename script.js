@@ -34,7 +34,7 @@ function signup() {
     var password = document.getElementById('signupPassword').value;
 
     // Replace with your actual signup API endpoint
-    var apiEndpoint = 'https://yourapiendpoint.com/signup';
+    var apiEndpoint = 'https://run.mocky.io/v3/8fc2a660-f1a6-4f41-b574-63fd8c64a11e';
 
     fetch(apiEndpoint, {
         method: 'POST',
