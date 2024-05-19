@@ -47,7 +47,7 @@ function signup() {
     .then(data => {
         if (data.success) {
             // Replace with your actual redirect URL
-            window.location.href = 'https://yourwebsite.com';
+            window.location.href = 'https://usmgo.portfoliobox.net/loginsuccess';
         } else {
             alert('Signup failed: ' + data.message);
         }
